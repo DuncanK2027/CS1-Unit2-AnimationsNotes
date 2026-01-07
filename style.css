@@ -1,1 +1,36 @@
+.box {
+    background: orange;
+    margin: 20px;
+    width:100px;
+    height:100px;
+    text-align: center;
+}
 
+/* The TRANSFORM property uses functional values like f(x) to change an element */
+
+#rotate {
+    transform: rotate(-10deg);
+}
+
+#scale {
+    transform: scale(0.5);
+}
+
+#skew {
+    transform: skew(-25deg);
+}
+
+/* translate(x) moves along x axis, translate (x, y) moves diagnally translate (0, y) moves along y only */
+#translate {
+    transform: translate(110px, 40px);
+}
+
+/* to apply MULTIPLE TRANSFORMS to the same element, you chain the functions in the same line of code */
+
+#chain {
+    transform: scaleY(0.75) rotate(280deg) translate(-10px);
+}
+
+#three-d {
+    transform: perspective(100px) translateZ(-30px);
+}

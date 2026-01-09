@@ -1,3 +1,28 @@
+/* STEP 1: Configure an element for animation */
+#animated-shape {
+    width: 200px;
+    height: 200px;
+    background: orange;
+    /* 4 sub-properties to attach animation */
+    animation-name: colorchange-alt;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+/* STEP 2: Define the animation sequence */
+@keyframes colorchange {
+    from { background: black; }
+    to { background: orange; }
+}
+@keyframes colorchange-alt {
+    0% { background: orange; }
+    50% { background: Black; }
+    100% { background: orange; }
+}
+
+
+
 .box {
     background: orange;
     margin: 20px;
